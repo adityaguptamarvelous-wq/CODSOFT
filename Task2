@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced Landing Page</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #0e0e0e;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* NAVBAR */
+    nav {
+      width: 100%;
+      padding: 20px 60px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(20, 20, 20, 0.7);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    nav .logo {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding:20px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 40px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 10px 18px;
+      border-radius: 12px;
+      transition: 0.3s ease;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    nav ul li a:hover {
+      background: #ffffff;
+      color: #000000;
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+      background: radial-gradient(circle at top left, #7038ff, #141414);
+    }
+
+    .hero h1 {
+      font-size: 64px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size: 22px;
+      max-width: 600px;
+      margin: auto;
+      opacity: 0.9;
+    }
+
+    .cta-btn {
+      margin-top: 40px;
+      padding: 16px 40px;
+      font-size: 20px;
+      border-radius: 14px;
+      border: none;
+      background: linear-gradient(135deg, #9b5cff, #6430ff);
+      color: white;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .cta-btn:hover {
+      transform: scale(1.08);
+    }
+
+    /* SPACING SECTIONS */
+    .section {
+      padding: 120px 60px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 48px;
+      margin-bottom: 30px;
+    }
+
+    /* PRICING */
+    .pricing-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .price-card {
+      width: 300px;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: 0.3s;
+    }
+
+    .price-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .price-card h3 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .price-card p {
+      margin: 15px 0;
+      opacity: 0.8;
+    }
+
+    .price-card button {
+      margin-top: 20px;
+      padding: 12px 30px;
+      border-radius: 12px;
+      background: #ffffff;
+      color: #000;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    /* TESTIMONIALS */
+    .testimonial-box {
+      max-width: 700px;
+      margin: auto;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+    }
+
+    /* CONTACT */
+    form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 14px;
+      border-radius: 12px;
+      border: none;
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+    }
+
+    form button {
+      padding: 14px;
+      background: linear-gradient(135deg, #9b5cff, #6430ff);
+      border: none;
+      border-radius: 12px;
+      font-size: 18px;
+      color: white;
+      cursor: pointer;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">BrandX</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="home">
+    <div>
+      <h1>Elevate Your Digital Experience</h1>
+      <p>Build modern, clean, and high-performance designs with a smooth user experience.</p>
+      <button class="cta-btn">Get Started</button>
+    </div>
+  </section>
+
+  <section class="section" id="pricing">
+    <h2>Pricing Plans</h2>
+    <div class="pricing-container">
+      <div class="price-card">
+        <h3>Starter</h3>
+        <p>Basic features for beginners.</p>
+        <button>Select</button>
+      </div>
+
+      <div class="price-card">
+        <h3>Professional</h3>
+        <p>Advanced tools for professionals.</p>
+        <button>Select</button>
+      </div>
+
+      <div class="price-card">
+        <h3>Enterprise</h3>
+        <p>Full-scale solutions for companies.</p>
+        <button>Select</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial-box">
+      <p>“This platform transformed our workflow. The UI is stunning and intuitive!”</p>
+      <p>- Satisfied Client</p>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+</body>
+</html>
